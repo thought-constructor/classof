@@ -1,0 +1,30 @@
+{
+  "name": "classof",
+  "version": "0.0.0",
+  "description": "Determines the class of the given argument using Object.prototype.toString.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosyx/classof.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "typeof",
+    "classof"
+  ],
+  "author": "Alex Goldsmith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tosyx/classof/issues"
+  },
+  "homepage": "https://github.com/tosyx/classof#readme",
+  "devDependencies": {
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-env": "^1.1.8",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
