@@ -1,4 +1,5 @@
-import global from 'const-global'
+import global
+	from 'const-global'
 
 function Arguments(/**/) {
 	return arguments
@@ -37,17 +38,18 @@ let classof = function (w) {
 	return global === w ? GLOBAL : OBJECT
 }
 
-if (OBJECT === classof(Arguments()))
+if (ARGUMENTS !== classof(Arguments()))
 	classof = (function (classof) {
 
 		return function (w) {
-			return 'number' === typeof w.length &&
+			return null != w &&
+				'number'   === typeof w.length &&
 				'function' === typeof w.callee ? ARGUMENTS : classof(w)
 		}
 
 	})(classof)
 
-if (OBJECT === classof(undefined))
+if (UNDEFINED !== classof(undefined))
 	classof = (function (classof) {
 
 		return function (w) {
@@ -56,7 +58,7 @@ if (OBJECT === classof(undefined))
 
 	})(classof)
 
-if (OBJECT === classof(null))
+if (NULL !== classof(null))
 	classof = (function (classof) {
 
 		return function (w) {
