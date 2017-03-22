@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tosyx/classof.git"
+    "url": "git://github.com/tosyx/classof.git"
   },
   "keywords": [
     "JavaScript",
