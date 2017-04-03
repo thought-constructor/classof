@@ -1,6 +1,6 @@
 {
   "name": "classof",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Determines the Class of the given argument (primarily determined using Object.prototype.toString).",
   "main": "lib/index.js",
   "scripts": {
@@ -26,6 +26,6 @@
     "mocha": "^3.2"
   },
   "dependencies": {
-    "const-global": "/Users/Adventurer/Studio/Development/Projects/tosyx/const-global"
+    "const-global": "^0.0"
   }
 }
